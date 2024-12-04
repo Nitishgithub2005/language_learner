@@ -162,7 +162,7 @@ async function fetchWords(language) {
     try {
         console.log(`Attempting to fetch words for language: ${language}`);
         
-        const response = await fetch(`https://language-learner-api.vercel.app/api/words?language=${language}`);
+        const response = await fetch(`https://language-learner-rsu2.onrender.com/api/words?language=${language}`);
         
         console.log('Response status:', response.status);
         console.log('Response headers:', response.headers);
