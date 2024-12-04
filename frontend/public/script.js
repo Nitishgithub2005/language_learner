@@ -162,7 +162,7 @@ async function fetchWords(language) {
     try {
         console.log(`Attempting to fetch words for language: ${language}`);
         
-        const response = await fetch(`http://localhost:5050/api/words?language=${language}`);
+        const response = await fetch(`https://language-learner-api.vercel.app/api/words?language=${language}`);
         
         console.log('Response status:', response.status);
         console.log('Response headers:', response.headers);
@@ -355,7 +355,7 @@ function openModal() {
 //this is fetch only for reminder
 async function fetchwo(language) {
     try {
-        const response = await fetch(`http://localhost:5050/api/words?language=${language}`);
+        const response = await fetch(`https://language-learner-api.vercel.app/api/words?language=${language}`);
         if (!response.ok) {
             throw new Error(`API Error: ${response.statusText}`);
         }
