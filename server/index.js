@@ -13,7 +13,7 @@ console.log("MongoDB URI:", "mongodb+srv://Nitishgithub2005:Niknit@cluster0.ym9r
 
 app.use(cors(
     {
-        origin: ["https://language-learner-psi.vercel.app/"],
+        origin: ["https://language-learner-psi.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
