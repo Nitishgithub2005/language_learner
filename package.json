@@ -1,8 +1,8 @@
 {
   "scripts": {
        "build":"mkdir -p dist && cp -r public dist/public && cp -r views dist/views",
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js", 
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js", 
     "seed:words": "node scripts/seedWords.js"
   },
   "dependencies": {
