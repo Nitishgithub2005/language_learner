@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build":"mkdir -p dist && cp -r frontend/public dist/public && cp -r frontend/views dist/views",
+    "build":"mkdir -p dist && cp -r public dist/public && cp -r views dist/views",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js", 
     "seed:words": "node scripts/seedWords.js"
