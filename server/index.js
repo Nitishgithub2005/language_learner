@@ -10,6 +10,16 @@ require("dotenv").config()
 const app = express();
 console.log("MongoDB URI:", "mongodb+srv://Nitishgithub2005:Niknit@cluster0.ym9rn.mongodb.net/login?retryWrites=true&w=majority&appName=Cluster0");
 // MongoDB Connection
+
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-frontend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
+app.use(express.json())
+
 mongoose.connect("mongodb+srv://Nitishgithub2005:Niknit@cluster0.ym9rn.mongodb.net/login?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true
