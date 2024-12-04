@@ -355,7 +355,7 @@ function openModal() {
 //this is fetch only for reminder
 async function fetchwo(language) {
     try {
-        const response = await fetch(`https://language-learner-api.vercel.app/api/words?language=${language}`);
+        const response = await fetch(`https://language-learner-rsu2.onrender.com/api/words?language=${language}`);
         if (!response.ok) {
             throw new Error(`API Error: ${response.statusText}`);
         }
